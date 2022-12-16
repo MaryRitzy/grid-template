@@ -3,27 +3,27 @@
     display: none;
   }
 
-
   &__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(30px, max-content));
     justify-content: end;
     gap: $gap;
-    @include unlist;
-  }
 
-  &__item {
-
+    @include unlist(0 (-$gap-sm) 0 0);
   }
 
   &__link {
     display: block;
-    padding: $gap $gap-sm;
+    padding: 19px 9px;
+
+    /*padding: $gap $gap-sm;*/
+
+    font-size: 1.125rem;
+    letter-spacing: 0.1em;
 
     &:hover,
     &:focus {
       color: $color-accent;
     }
-
   }
   }
