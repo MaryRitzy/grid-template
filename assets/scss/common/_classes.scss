@@ -8,6 +8,12 @@ background-color: rgba(255, 255, 255, 0.1);
 border: 2px solid $color-white;
 padding: 0.5em 1em;
 
+transition: background-color 0.25s;
+
+&:hover {
+  background-color: $color-accent;
+}
+
   &--light {
 
   }
