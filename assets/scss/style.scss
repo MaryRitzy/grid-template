@@ -5,3 +5,15 @@
 @use "components/skills";
 @use "components/about";
 
+@media (mix-height: 601px) {
+.skills__container {
+  grid-auto-rows: 3, calc(33.3333vh - 13.3333333333px);
+  }
+}
+
+@media (max-height: 600px) {
+  .skills__container {
+    grid-auto-rows: 3, calc(200px - 13.3333333333px);
+    }
+
+}
